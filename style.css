@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap'); 
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.849);
+    font-family: 'fira mono';
+    height: 100vh;
+}
+.popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 450px;
+    width: 100%;
+    padding: 20px 5px;
+    background: #ffff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    height: 580px;
+    overflow-x: hidden
+}
+/* fake button */
+.popup .close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    background: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+/* descrição do produto */
+ul{
+    list-style-type: none;
+    text-align: center;
+    font-size: 12px;
+}
+li{
+    padding-top: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+li:last-child(2){
+    padding-bottom: 30px;
+}
+/* linha do total da compra */
+hr{
+    margin: auto;
+    width: 95%;
+    border: none;
+    height: .5px;
+    background-color: #A9A9A9;
+}
+/* forma de pagamento */
+.popup h2{
+    text-align: center;
+    color: #222;
+    font-size: 20px;
+    letter-spacing: 5px;
+    -webkit-text-stroke: 0.5px;
+    margin-top: 30px;
+}
+.icons{
+    margin-top: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+h3{
+    text-align: justify;
+    padding: 15px 30px;
+    letter-spacing: 2px;
+    font-size: 12px;
+    margin-top: 20px;
+}
+/* o botão para confirmar */
+.input-box button {
+    padding: 10px 25px;
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    -webkit-text-stroke: 0.2px;
+    letter-spacing: 2px;
+    margin-left: 160px;
+  }
+.row-1{
+    border: 1px;
+    background-color: #A9A9A9;
+    width: 100%;
+    position: relative;
+    top: 30%;
+    height: 0.5px;
+    right: 15px;
+    margin: 10px;
+}
+.logo-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    -webkit-text-stroke: 1px;
+}
+.row-2{
+    border: 1px;
+    background-color: #A9A9A9;
+    width: 100%;
+    position: relative;
+    top: 30%;
+    height: 0.5px;
+    left: 15px;
+    margin: 10px;
+}
+.logo-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 12%;
+    margin-bottom: 20px;
+}
+@media (max-width: 475px){ 
+    .popup{
+        max-width: 400px;
+        height: 550px;
+    }
+    .popup h2{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 10px;
+    }
+    .input-box button{
+        margin-left: 135px;
+    }
+}
+@media (max-width: 420px){
+    .popup{
+        max-width: 350px;
+        height: 520px;
+    }
+    .popup h2{
+        font-size: 18px;
+    } 
+    .icons{
+        display: flex;
+        justify-content: center;
+    }
+    .input-box button{
+        margin-left: 109px;
+    }
+}
+@media (max-width: 366px){
+    ul{
+        font-size: 8px;
+    }
+    .popup{
+        max-width: 300px;
+        height: 480px;
+    }
+    .popup h2{
+        font-size: 14px;
+    } 
+    .icons{
+        display: flex;
+        justify-content: center;
+    }
+    h3{
+        font-size: 10px;
+    }
+    .input-box button{
+        margin-left: 85px;
+    }
+}
